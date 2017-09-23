@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinSignalR"
+             x:Class="XamarinSignalR.MainPage" BackgroundColor="LightBlue">
+    <StackLayout >
+        <Label FontSize="Large" Text="SignalR Demo"></Label>
+        <Entry Placeholder="Enter your name" x:Name="entUserName"></Entry>
+        <StackLayout  Margin="10" BackgroundColor="White">
+            <Label Text="Open Messages" FontSize="Medium"></Label>
+            <Entry Placeholder="Enter your message" x:Name="entMessage"></Entry>
+            <Button Text="Send Message" x:Name="btnSendMessage" Clicked="btnSendMessage_Clicked"  ></Button>
+        </StackLayout>
+        <StackLayout  Margin="10" BackgroundColor="White">
+            <Label Text="Group Messages" FontSize="Medium"></Label>
+            <Entry Placeholder="Enter your GroupName" x:Name="entGroupName"></Entry>
+            <Button Text="Join Group" x:Name="btnJoinGroup" Clicked="btnJoinGroup_Clicked" ></Button>
+            <Entry Placeholder="Enter your message" x:Name="entGroupMessage"></Entry>
+            <Button Text="Send Group Message" x:Name="btnSendGroupMessage" Clicked="btnSendGroupMessage_Clicked"></Button>
+            <Button Text="Join Group" x:Name="btnLeaveGroup" Clicked="btnLeaveGroup_Clicked"></Button>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
